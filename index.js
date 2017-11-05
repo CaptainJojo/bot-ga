@@ -87,7 +87,7 @@ exports.analitycs = function analytics(req, res) {
         }
 
         res.send({
-          speech: "Le nombre de page vue entre le " + startDate + " et le " + endDate + " est de " + body.totalsForAllResults['ga:pageviews']
+          speech: "Le nombre de pages vues entre le " + startDate + " et le " + endDate + " est de " + body.totalsForAllResults['ga:pageviews']
         });
     }))
     .catch((err) => res.send(err));
